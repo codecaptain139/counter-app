@@ -9,8 +9,16 @@ function App() {
   }
 
   const handleDecrement = () => {
-    setCount(count - 1);
+    if(count > 0){
+      setCount(count - 1)
+    }
   }
+
+  const handleReset = () => {
+    setCount(0);
+  }
+
+
 
   return(
     <div className="app">
@@ -26,9 +34,11 @@ function App() {
         </button>
 
         <button 
-          className="btn" onClick={handleDecrement}>
+          className="btn" onClick={handleDecrement} disabled={count === 0}>
             Decrement
         </button>
+
+        <button className="btn" onClick={handleReset}>Reset</button>
       </div>
     </div>
   </div> 
