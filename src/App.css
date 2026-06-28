@@ -47,3 +47,28 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.dark{
+  background-color: black;
+  color: white;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
+
+.dark .container{
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.theme-btn{
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.theme-btn:hover{
+  cursor: pointer;
+}
